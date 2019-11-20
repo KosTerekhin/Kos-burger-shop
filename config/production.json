@@ -1,0 +1,6 @@
+{
+    "MongoURI": "mongodb+srv://selector123:selector123@burgernovemebernew-sn8sp.mongodb.net/test?retryWrites=true&w=majority",
+    "jwtSecret": "secret"
+}
+
+ 
