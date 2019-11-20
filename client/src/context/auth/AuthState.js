@@ -19,7 +19,7 @@ const AuthState = (props) => {
 		if (token) {
 			setHeader(token);
 			try {
-				const res = await axios.get('http://localhost:5000/api/login');
+				const res = await axios.get('https://immense-earth-50268.herokuapp.com/api/login');
 				dispatch({
 					type: 'LOGIN_CLIENT',
 					payload: res.data
@@ -42,7 +42,7 @@ const AuthState = (props) => {
 			}
 		};
 		try {
-			const res = await axios.post('http://localhost:5000/api/client', req, config);
+			const res = await axios.post('https://immense-earth-50268.herokuapp.com/api/client', req, config);
 			dispatch({
 				type: 'REG_TOKEN',
 				payload: res.data
@@ -65,7 +65,7 @@ const AuthState = (props) => {
 			}
 		};
 		try {
-			const res = await axios.post('http://localhost:5000/api/login', req, config);
+			const res = await axios.post('https://immense-earth-50268.herokuapp.com/api/login', req, config);
 			dispatch({
 				type: 'LOGIN_TOKEN',
 				payload: res.data

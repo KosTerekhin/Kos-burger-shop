@@ -82,7 +82,7 @@ const BurgerState = (props) => {
 		console.log(order)
 
 		try {
-			const res = await Axios.post('http://localhost:5000/api/orders', order, config);
+			const res = await Axios.post('https://immense-earth-50268.herokuapp.com/api/orders', order, config);
 			dispatch({
 				type: 'ORDER_CONFIRMED',
 				payload: res.data
@@ -95,7 +95,7 @@ const BurgerState = (props) => {
 
 	const fetchOrders = async () => {
 		try {
-			const res = await Axios.get('http://localhost:5000/api/orders');
+			const res = await Axios.get('https://immense-earth-50268.herokuapp.com/api/orders');
 			res &&
 				dispatch({
 					type: 'GET_ORDER_HISOTRY',
