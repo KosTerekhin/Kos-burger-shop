@@ -79,17 +79,14 @@ const BurgerState = (props) => {
 			}
 		};
 
-		console.log(order)
-
 		try {
 			const res = await Axios.post('https://immense-earth-50268.herokuapp.com/api/orders', order, config);
 			dispatch({
 				type: 'ORDER_CONFIRMED',
 				payload: res.data
 			});
-			console.log(res.data)
 		} catch (error) {
-			throw error
+			throw error;
 		}
 	};
 
@@ -102,7 +99,7 @@ const BurgerState = (props) => {
 					payload: res.data
 				});
 		} catch (error) {
-			console.log(error);
+			throw error;
 		}
 	};
 

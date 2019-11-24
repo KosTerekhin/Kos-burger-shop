@@ -83,8 +83,7 @@ const SumTest = (props) => {
 		});
 	};
 
-	const checkout = (e) => {
-		e.preventDefault();
+	const checkout = () => {
 		submitOrder(orderTotal);
 		setTimeout(()=> {
 

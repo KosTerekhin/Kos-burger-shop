@@ -3,7 +3,6 @@ import loader from '../../assets/inLineLoader.gif';
 
 const Sum = (props) => {
 	const { orderTotal, checkout } = props;
-	console.log(props)
 	const [ load, setLoad ] = useState({
 		isLoading: false,
 		isSuccess: false
@@ -22,12 +21,11 @@ const Sum = (props) => {
 					isLoading: false,
 					isSuccess: true
 				});
-				checkout(e)
+				checkout()
 			}, 1500)
 
 		} catch (error) {
 			throw error;
-			// need to create alert here
 		}
 	};
 
