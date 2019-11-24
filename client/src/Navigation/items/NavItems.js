@@ -19,9 +19,6 @@ const NavItems = () => {
 
 	return (
 		<div className="navItems">
-			<Link to="/" onClick={handleClick} className="singeNavItem">
-				Checkout
-			</Link>
 			<Link to="/OrderHistory" onClick={handleClick} className="singeNavItem">
 				Order history
 			</Link>
