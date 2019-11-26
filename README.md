@@ -8,18 +8,17 @@ To learn how to build full stack JS app from scratch using modern dev technologi
 
 ## Users interactions
 
-* Login / Registration
+* Login / Registration.
 * onClick UI and cost updates
 * Modal with slider for order submit 
-* Stripe API for payment
-* Order history page
+* Order history page fetched from stored data in MongoDB
 
 ## Tech Stack
 
- * CSS / No frameworks
  * React.js / Context API
  * Node.js / Express / JWT for authentication
  * Mongo DB
+ 
 
 
 
