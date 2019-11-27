@@ -1,6 +1,6 @@
 # Kos-burger-shop
 
-Order burger using React.js(context API) and Node.js API(express). Interactive UI makes ordering process fun and easy, on every click you can see how the order changes 
+Order burger web app build on React.js and Node.js. Interactive UI makes ordering process fun and easy, on every click you can see how the order changes 
 
 ## Motivation for creating this project
 
@@ -8,16 +8,16 @@ To learn how to build full stack JS app from scratch using modern dev technologi
 
 ## Users interactions
 
-* Login / Registration.
-* onClick UI and cost updates
-* Modal with slider for order submit 
-* Order history page fetched from stored data in MongoDB
+* Login / Registration using JWT. Storing user details and order history in MongoDB.
+* Interactive burger UI with live item and cost updates.
+* Private routes for logged in users only. Setting login token into global header once user is authenticated. 
+* Validation and error handling on client and server side
+* Slider modal for order confirmation
 
 ## Tech Stack
 
- * React.js / Context API
- * Node.js / Express / JWT for authentication
- * Mongo DB
+ * React.js / Context API / Hooks. Additional libraries: axios, react-router-dom. 
+ * Node.js / Express / Mongo DB. Additional libraries: JWT, config, mongoose, express-validator, body-parser
  
 
 
